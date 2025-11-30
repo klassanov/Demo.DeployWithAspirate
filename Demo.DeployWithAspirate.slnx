@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Demo.DeployWithAspirate.ApiService/Demo.DeployWithAspirate.ApiService.csproj" />
+  <Project Path="Demo.DeployWithAspirate.AppHost/Demo.DeployWithAspirate.AppHost.csproj" />
+  <Project Path="Demo.DeployWithAspirate.ServiceDefaults/Demo.DeployWithAspirate.ServiceDefaults.csproj" />
+  <Project Path="Demo.DeployWithAspirate.Web/Demo.DeployWithAspirate.Web.csproj" />
+</Solution>
