@@ -1,0 +1,11 @@
+{
+  "projectPath": ".",
+  "containerImageTags": [
+    "latest"
+  ],
+  "containerBuilder": "docker",
+  "containerRepositoryPrefix": "aspiratedemo",
+  "outputFormat": "kustomize",
+  "disableSecrets": true,
+  "processAllComponents": true
+}
