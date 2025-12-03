@@ -1,5 +1,7 @@
 {
   "projectPath": ".",
+  "outputPath": "aspirate-output",
+  "namespace": "aspiratedemo",
   "containerImageTags": [
     "latest"
   ],
@@ -7,5 +9,8 @@
   "containerRepositoryPrefix": "aspiratedemo",
   "outputFormat": "kustomize",
   "disableSecrets": true,
+  "skipFinalKustomizeGeneration": false,
+  "privateRegistryEmail": "aspir8@aka.ms",
+  "useCustomNamespace": true,
   "processAllComponents": true
 }

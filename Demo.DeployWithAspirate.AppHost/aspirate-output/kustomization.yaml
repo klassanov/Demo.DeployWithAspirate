@@ -1,0 +1,13 @@
+namespace: aspiratedemo
+
+resources:
+- cache
+- apiservice
+- webfrontend
+- namespace.yaml
+- dashboard.yaml
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+

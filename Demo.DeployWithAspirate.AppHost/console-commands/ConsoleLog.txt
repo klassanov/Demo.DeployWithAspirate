@@ -1,0 +1,703 @@
+﻿*********************************************************************
+** Visual Studio 2026 Developer Command Prompt v18.3.0-insiders
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate>дир
+'дир' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate>dir
+ Volume in drive C is OS
+ Volume Serial Number is F891-519E
+
+ Directory of C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate
+
+30-Nov-25  09:32 PM    <DIR>          .
+30-Nov-25  10:39 AM    <DIR>          ..
+30-Nov-25  11:14 AM             2,581 .gitattributes
+30-Nov-25  08:54 PM    <DIR>          .github
+30-Nov-25  11:14 AM             6,585 .gitignore
+30-Nov-25  10:39 AM    <DIR>          Demo.DeployWithAspirate.ApiService
+30-Nov-25  09:41 PM    <DIR>          Demo.DeployWithAspirate.AppHost
+30-Nov-25  10:39 AM    <DIR>          Demo.DeployWithAspirate.ServiceDefaults
+30-Nov-25  10:39 AM               411 Demo.DeployWithAspirate.slnx
+30-Nov-25  10:39 AM    <DIR>          Demo.DeployWithAspirate.Web
+               3 File(s)          9,577 bytes
+               7 Dir(s)  132,896,899,072 bytes free
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate>cd Demo.DeployWithAspirate.AppHost
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>aspirate generate --skip-build
+
+     _                    _           ___
+    / \     ___   _ __   (_)  _ __   ( _ )
+   / _ \   / __| | '_ \  | | | '__|  / _ \
+  / ___ \  \__ \ | |_) | | | | |    | (_) |
+ /_/   \_\ |___/ | .__/  |_| |_|     \___/
+                 |_|
+Handle deployments of a .NET Aspire AppHost
+
+
+── Handling Aspirate State ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Loading state from C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-state.json.
+Would you like to use all previous state values, and skip re-prompting where possible ? [y/n] (y): y
+(?) Done:  State loaded successfully from C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-state.json. Will run without
+re-prompting for values.
+
+── Handling Aspirate Secrets ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Secrets are disabled.
+
+── Handling Aspire Manifest ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Generating Aspire Manifest for supplied App Host
+(?) Done:  Created Aspire Manifest At Path: C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\manifest.json
+
+── Selecting Required Components ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Resource 'cache-password-uri-encoded' is unsupported type 'annotated.string'. Skipping as UnsupportedResource.
+Processing all components in the loaded file, as per the state file.
+
+── Handling Inputs ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Successfully generated a value for cache-password's Input Value 'value'
+(?) Done:  Input values have all been assigned.
+
+── Handle Value and Parameter Substitution ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+── Handling DAPR Components ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+No Dapr components selected, skipping Dapr annotations.
+
+── Gathering Information about deployables ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Gathering container details for each project in selected components
+(?) Done:  Populated container details cache for project apiservice
+(?) Done:  Populated container details cache for project webfrontend
+Gathering Tasks Completed - Cache Populated.
+
+── Handling Projects ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Skipping build and push action as requested.
+
+── Handling Dockerfiles ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+No Dockerfile components selected. Skipping build and publish action.
+
+── Populating Secrets File ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Secrets have been disabled for this run.
+
+── Handling Namespace ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Would you like to deploy all manifests to a custom namespace? [y/n] (n): y
+Enter the namespace you would like to deploy all manifests to:  demoaspiratenamespace
+ Generated manifests will be deployed to the demoaspiratenamespace namespace.
+
+── Handle Kustomize Manifests ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Generating kustomize manifests to run against your kubernetes cluster:
+(?) Done:  Generating C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output\cache
+(?) Done:  Generating C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output\apiservice
+(?) Done:  Generating C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output\webfrontend
+
+── Handling Final Manifest ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Would you like to generate the top level kustomize manifest to run against your kubernetes cluster? [y/n] (y): y
+Generating namespace manifest with name 'demoaspiratenamespace'
+(?) Done:  Generating aspirate-output/namespace.yaml
+Generating Aspire Dashboard manifest
+(?) Done:  Generating aspirate-output/dashboard.yaml
+Generating final manifest with name 'kustomization.yaml'
+(?) Done:  Generating aspirate-output/kustomization.yaml
+
+ ?? Execution Completed ??
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>aspirate apply
+
+     _                    _           ___
+    / \     ___   _ __   (_)  _ __   ( _ )
+   / _ \   / __| | '_ \  | | | '__|  / _ \
+  / ___ \  \__ \ | |_) | | | | |    | (_) |
+ /_/   \_\ |___/ | .__/  |_| |_|     \___/
+                 |_|
+Handle deployments of a .NET Aspire AppHost
+
+
+── Handling Aspirate State ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Loading state from C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-state.json.
+Would you like to use all previous state values, and skip re-prompting where possible ? [y/n] (y): y
+(?) Done:  State loaded successfully from C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-state.json. Will run without
+re-prompting for values.
+
+── Handling Aspirate Secrets ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Secrets are disabled.
+
+── Handle Deployment to Cluster ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Would you like to deploy the generated manifests to a kubernetes cluster defined in your kubeconfig file? [y/n] (y): y
+(?) Done: Successfully set the Active Kubernetes Context to 'kind-kind'
+
+Executing: kubectl apply --server-side -k C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output against kubernetes context
+kind-kind.
+error: Unexpected args: [Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output]
+See 'kubectl apply -h' for help and examples
+Failed to deploy manifests in 'C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output'
+(?) Done: Deployments successfully applied to cluster 'kind-kind'
+
+ ?? Execution Completed ??
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>aspirate apply
+
+     _                    _           ___
+    / \     ___   _ __   (_)  _ __   ( _ )
+   / _ \   / __| | '_ \  | | | '__|  / _ \
+  / ___ \  \__ \ | |_) | | | | |    | (_) |
+ /_/   \_\ |___/ | .__/  |_| |_|     \___/
+                 |_|
+Handle deployments of a .NET Aspire AppHost
+
+
+── Handling Aspirate State ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Loading state from C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-state.json.
+Would you like to use all previous state values, and skip re-prompting where possible ? [y/n] (y): y
+(?) Done:  State loaded successfully from C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-state.json. Will run without
+re-prompting for values.
+
+── Handling Aspirate Secrets ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Secrets are disabled.
+
+── Handle Deployment to Cluster ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Executing: kubectl apply --server-side -k C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output against kubernetes context
+kind-kind.
+error: Unexpected args: [Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output]
+See 'kubectl apply -h' for help and examples
+Failed to deploy manifests in 'C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output'
+(?) Done: Deployments successfully applied to cluster 'kind-kind'
+
+ ?? Execution Completed ??
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>aspirate apply
+
+     _                    _           ___
+    / \     ___   _ __   (_)  _ __   ( _ )
+   / _ \   / __| | '_ \  | | | '__|  / _ \
+  / ___ \  \__ \ | |_) | | | | |    | (_) |
+ /_/   \_\ |___/ | .__/  |_| |_|     \___/
+                 |_|
+Handle deployments of a .NET Aspire AppHost
+
+
+── Handling Aspirate State ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Loading state from C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-state.json.
+Would you like to use all previous state values, and skip re-prompting where possible ? [y/n] (y): y
+(?) Done:  State loaded successfully from C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-state.json. Will run without
+re-prompting for values.
+
+── Handling Aspirate Secrets ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Secrets are disabled.
+
+── Handle Deployment to Cluster ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Executing: kubectl apply --server-side -k C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output against kubernetes context
+kind-kind.
+error: Unexpected args: [Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output]
+See 'kubectl apply -h' for help and examples
+Failed to deploy manifests in 'C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output'
+(?) Done: Deployments successfully applied to cluster 'kind-kind'
+
+ ?? Execution Completed ??
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>kubectl config get-contexts
+CURRENT   NAME        CLUSTER     AUTHINFO    NAMESPACE
+*         kind-kind   kind-kind   kind-kind
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>aspirate apply
+
+     _                    _           ___
+    / \     ___   _ __   (_)  _ __   ( _ )
+   / _ \   / __| | '_ \  | | | '__|  / _ \
+  / ___ \  \__ \ | |_) | | | | |    | (_) |
+ /_/   \_\ |___/ | .__/  |_| |_|     \___/
+                 |_|
+Handle deployments of a .NET Aspire AppHost
+
+
+── Handling Aspirate State ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Loading state from C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-state.json.
+Would you like to use all previous state values, and skip re-prompting where possible ? [y/n] (y): n
+(?) Done:  State has been disabled for this run. Only secrets will be populated.
+
+── Handling Aspirate Secrets ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Secrets are to be protected by a password
+
+Please enter new Password: *
+Please enter it again to confirm: *
+Secret State has been initialised!.
+
+── Handle Deployment to Cluster ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Would you like to deploy the generated manifests to a kubernetes cluster defined in your kubeconfig file? [y/n] (y): y
+(?) Done: Successfully set the Active Kubernetes Context to 'kind-kind'
+
+Executing: kubectl apply --server-side -k C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output against kubernetes context
+kind-kind.
+error: Unexpected args: [Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output]
+See 'kubectl apply -h' for help and examples
+Failed to deploy manifests in 'C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output'
+(?) Done: Deployments successfully applied to cluster 'kind-kind'
+
+ ?? Execution Completed ??
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>aspirate generate
+
+     _                    _           ___
+    / \     ___   _ __   (_)  _ __   ( _ )
+   / _ \   / __| | '_ \  | | | '__|  / _ \
+  / ___ \  \__ \ | |_) | | | | |    | (_) |
+ /_/   \_\ |___/ | .__/  |_| |_|     \___/
+                 |_|
+Handle deployments of a .NET Aspire AppHost
+
+
+── Handling Aspirate State ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Loading state from C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-state.json.
+Would you like to use all previous state values, and skip re-prompting where possible ? [y/n] (y): y
+(?) Done:  State loaded successfully from C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-state.json. Will run without
+re-prompting for values.
+
+── Handling Aspirate Secrets ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Secrets are protected by a password. Please enter it now: *
+(?) Done:  Secret State populated successfully.
+Unhandled exception: System.ArgumentOutOfRangeException: The output format 'docker' is not supported. (Parameter 'OutputFormat')
+   at Aspirate.Commands.Commands.Generate.GenerateCommandHandler.HandleAsync(GenerateOptions options) in /home/runner/work/aspirational-manifests/aspirational-manifests/src/Aspirate.Commands/Commands/Generate/GenerateCommandHandler.cs:line 9
+   at Aspirate.Commands.Commands.BaseCommand`2.ConstructCommand(TOptions options, IServiceCollection services) in /home/runner/work/aspirational-manifests/aspirational-manifests/src/Aspirate.Commands/Commands/BaseCommand.cs:line 46
+   at System.CommandLine.NamingConventionBinder.CommandHandler.GetExitCodeAsync(Object returnValue, InvocationContext context)
+   at System.CommandLine.NamingConventionBinder.ModelBindingCommandHandler.InvokeAsync(InvocationContext context)
+   at System.CommandLine.Invocation.InvocationPipeline.<>c__DisplayClass4_0.<<BuildInvocationChain>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at System.CommandLine.Builder.CommandLineBuilderExtensions.<>c__DisplayClass17_0.<<UseParseErrorReporting>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at System.CommandLine.Builder.CommandLineBuilderExtensions.<>c__DisplayClass12_0.<<UseHelp>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at System.CommandLine.Builder.CommandLineBuilderExtensions.<>c__DisplayClass22_0.<<UseVersionOption>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at System.CommandLine.Builder.CommandLineBuilderExtensions.<>c__DisplayClass19_0.<<UseTypoCorrections>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at System.CommandLine.Builder.CommandLineBuilderExtensions.<>c.<<UseSuggestDirective>b__18_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at System.CommandLine.Builder.CommandLineBuilderExtensions.<>c__DisplayClass16_0.<<UseParseDirective>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at System.CommandLine.Builder.CommandLineBuilderExtensions.<>c.<<RegisterWithDotnetSuggest>b__5_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at System.CommandLine.Builder.CommandLineBuilderExtensions.<>c__DisplayClass8_0.<<UseExceptionHandler>b__0>d.MoveNext()
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>aspirate generate
+
+     _                    _           ___
+    / \     ___   _ __   (_)  _ __   ( _ )
+   / _ \   / __| | '_ \  | | | '__|  / _ \
+  / ___ \  \__ \ | |_) | | | | |    | (_) |
+ /_/   \_\ |___/ | .__/  |_| |_|     \___/
+                 |_|
+Handle deployments of a .NET Aspire AppHost
+
+
+── Handling Aspirate State ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Loading state from C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-state.json.
+Would you like to use all previous state values, and skip re-prompting where possible ? [y/n] (y): n
+(?) Done:  State has been disabled for this run. Only secrets will be populated.
+
+── Handling Aspirate Secrets ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Secrets are protected by a password. Please enter it now: *
+(?) Done:  Secret State populated successfully.
+
+── Handling Configuration ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Successfully loaded existing aspirate bootstrap settings from '.'.
+
+── Handling Aspire Manifest ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Generating Aspire Manifest for supplied App Host
+(?) Done:  Created Aspire Manifest At Path: C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\manifest.json
+
+── Selecting Required Components ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Resource 'cache-password-uri-encoded' is unsupported type 'annotated.string'. Skipping as UnsupportedResource.
+
+── Handling Aspire Dashboard ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Would you like to deploy the aspire dashboard and connect the OTLP endpoint? [y/n] (y): y
+
+── Handling Inputs ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Successfully generated a value for cache-password's Input Value 'value'
+(?) Done:  Input values have all been assigned.
+
+── Handle Value and Parameter Substitution ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+── Handling DAPR Components ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+No Dapr components selected, skipping Dapr annotations.
+
+── Gathering Information about deployables ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Gathering container details for each project in selected components
+(?) Done:  Populated container details cache for project apiservice
+(?) Done:  Populated container details cache for project webfrontend
+Gathering Tasks Completed - Cache Populated.
+
+── Handling Projects ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Building all project resources, and pushing containers
+
+Executing: dotnet publish "C:\Personal\SW Development\.NET Aspire Book
+Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\../Demo.DeployWithAspirate.ApiService/Demo.DeployWithAspirate.ApiService.csproj" -t:PublishContainer --verbosity "quiet" --nologo
+-r "linux-x64" -p:ContainerRepository="aspiratedemo/apiservice" -p:ContainerImageTag="latest"
+(?) Done:  Building and Pushing container for project apiservice
+
+Executing: dotnet publish "C:\Personal\SW Development\.NET Aspire Book
+Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\../Demo.DeployWithAspirate.Web/Demo.DeployWithAspirate.Web.csproj" -t:PublishContainer --verbosity "quiet" --nologo -r "linux-x64"
+-p:ContainerRepository="aspiratedemo/webfrontend" -p:ContainerImageTag="latest"
+(?) Done:  Building and Pushing container for project webfrontend
+Building and push completed for all selected project components.
+
+── Handling Dockerfiles ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+No Dockerfile components selected. Skipping build and publish action.
+
+── Populating Secrets File ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+(?) Done:  Secret State has been saved.
+
+── Handle Image Pull Policy ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+── Handling Namespace ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Would you like to deploy all manifests to a custom namespace? [y/n] (n): y
+Enter the namespace you would like to deploy all manifests to:  aspiratedemo
+ Generated manifests will be deployed to the aspiratedemo namespace.
+
+── Handle Kustomize Manifests ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Generating kustomize manifests to run against your kubernetes cluster:
+(?) Done:  Generating C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output\cache
+(?) Done:  Generating C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output\apiservice
+(?) Done:  Generating C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output\webfrontend
+
+── Handling Final Manifest ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Would you like to generate the top level kustomize manifest to run against your kubernetes cluster? [y/n] (y): y
+Generating namespace manifest with name 'aspiratedemo'
+(?) Done:  Generating aspirate-output/namespace.yaml
+Generating Aspire Dashboard manifest
+(?) Done:  Generating aspirate-output/dashboard.yaml
+Generating final manifest with name 'kustomization.yaml'
+(?) Done:  Generating aspirate-output/kustomization.yaml
+
+ ?? Execution Completed ??
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>kind load docker-image aspiratedemo/webfrontend:latest --name aspirate
+ERROR: no nodes found for cluster "aspirate"
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>kind load docker-image aspiratedemo/webfrontend:latest
+Image: "aspiratedemo/webfrontend:latest" with ID "sha256:84bad7413af0ba70ab9ca600a19657aee656d3d6a343b083ae251cdc22ace503" not yet present on node "kind-control-plane", loading...
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>kind load docker-image aspiratedemo/apiservice:latest
+Image: "aspiratedemo/apiservice:latest" with ID "sha256:b110d3d0c0d7971c15ea57b6f913d746835a143e4f8f93f1a6e47ed6c38b8ce6" not yet present on node "kind-control-plane", loading...
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>aspirate apply
+
+     _                    _           ___
+    / \     ___   _ __   (_)  _ __   ( _ )
+   / _ \   / __| | '_ \  | | | '__|  / _ \
+  / ___ \  \__ \ | |_) | | | | |    | (_) |
+ /_/   \_\ |___/ | .__/  |_| |_|     \___/
+                 |_|
+Handle deployments of a .NET Aspire AppHost
+
+
+── Handling Aspirate State ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Loading state from C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-state.json.
+Would you like to use all previous state values, and skip re-prompting where possible ? [y/n] (y): y
+(?) Done:  State loaded successfully from C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-state.json. Will run without
+re-prompting for values.
+
+── Handling Aspirate Secrets ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Secrets are protected by a password. Please enter it now: *
+(?) Done:  Secret State populated successfully.
+
+── Handle Deployment to Cluster ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Would you like to deploy the generated manifests to a kubernetes cluster defined in your kubeconfig file? [y/n] (y): y
+(?) Done: Successfully set the Active Kubernetes Context to 'kind-kind'
+
+Executing: kubectl apply --server-side -k C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output against kubernetes context
+kind-kind.
+error: Unexpected args: [Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output]
+See 'kubectl apply -h' for help and examples
+Failed to deploy manifests in 'C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output'
+(?) Done: Deployments successfully applied to cluster 'kind-kind'
+
+ ?? Execution Completed ??
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>kubectl get all --namespace aspiredemo
+No resources found in aspiredemo namespace.
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>kubectl get all --namespace aspiratedemo
+No resources found in aspiratedemo namespace.
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>kubectl apply --server-side -k "C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output"
+error: accumulating resources: accumulation err='accumulating resources from 'webfrontend': 'C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output\webfrontend' must resolve to a file': recursed accumulation of path 'C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output\webfrontend': loading KV pairs: env source files: [.webfrontend.secrets]: evalsymlink failure on 'C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output\webfrontend\.webfrontend.secrets' : CreateFile C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output\webfrontend\.webfrontend.secrets: The system cannot find the file specified.
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>kubectl apply -k
+error: flag needs an argument: 'k' in -k
+See 'kubectl apply --help' for usage.
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>kubectl apply
+error: must specify one of -f and -k
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>aspire generate
+
+Required command was not provided.
+Unrecognized command or argument 'generate'.
+
+Description:
+  The Aspire CLI can be used to create, run, and publish Aspire-based applications.
+
+Usage:
+  aspire [command] [options]
+
+Options:
+  -d, --debug          Enable debug logging to the console.
+  --non-interactive    Run the command in non-interactive mode, disabling all interactive prompts and spinners
+  --wait-for-debugger  Wait for a debugger to attach before executing the command.
+  -?, -h, --help       Show help and usage information
+  --version            Show version information
+
+Commands:
+  new                Create a new Aspire project.
+  init               Initialize Aspire support in an existing solution or create a single-file AppHost.
+  run                Run an Aspire apphost in development mode.
+  add <integration>  Add a hosting integration to the Aspire AppHost.
+  publish            Generates deployment artifacts for an Aspire apphost. (Preview)
+  config             Manage configuration settings.
+  cache              Manage disk cache for CLI operations.
+  deploy             Deploy the contents of an Aspire apphost to its defined deployment targets. (Preview)
+  do <step>          Execute a specific pipeline step and its dependencies. (Preview)
+  update             Update integrations in the Aspire project. (Preview)
+
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>aspirate generate
+
+     _                    _           ___
+    / \     ___   _ __   (_)  _ __   ( _ )
+   / _ \   / __| | '_ \  | | | '__|  / _ \
+  / ___ \  \__ \ | |_) | | | | |    | (_) |
+ /_/   \_\ |___/ | .__/  |_| |_|     \___/
+                 |_|
+Handle deployments of a .NET Aspire AppHost
+
+
+── Handling Aspirate State ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Loading state from C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-state.json.
+Would you like to use all previous state values, and skip re-prompting where possible ? [y/n] (y): n
+(✔) Done:  State has been disabled for this run. Only secrets will be populated.
+
+── Handling Aspirate Secrets ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Secrets are protected by a password. Please enter it now: *
+(✔) Done:  Secret State populated successfully.
+
+── Handling Configuration ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Successfully loaded existing aspirate bootstrap settings from '.'.
+
+── Handling Aspire Manifest ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Generating Aspire Manifest for supplied App Host
+(✔) Done:  Created Aspire Manifest At Path: C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\manifest.json
+
+── Selecting Required Components ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Resource 'cache-password-uri-encoded' is unsupported type 'annotated.string'. Skipping as UnsupportedResource.
+
+── Handling Aspire Dashboard ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Would you like to deploy the aspire dashboard and connect the OTLP endpoint? [y/n] (y): y
+
+── Handling Inputs ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Secret for cache-password's Input Value 'value' loaded from secret state.
+(✔) Done:  Input values have all been assigned.
+
+── Handle Value and Parameter Substitution ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+── Handling DAPR Components ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+No Dapr components selected, skipping Dapr annotations.
+
+── Gathering Information about deployables ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Gathering container details for each project in selected components
+(✔) Done:  Populated container details cache for project apiservice
+(✔) Done:  Populated container details cache for project webfrontend
+Gathering Tasks Completed - Cache Populated.
+
+── Handling Projects ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Building all project resources, and pushing containers
+
+Executing: dotnet publish "C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\../Demo.DeployWithAspirate.ApiService/Demo.DeployWithAspirate.ApiService.csproj"
+-t:PublishContainer --verbosity "quiet" --nologo -r "linux-x64" -p:ContainerRepository="aspiratedemo/apiservice" -p:ContainerImageTag="latest"
+(✔) Done:  Building and Pushing container for project apiservice
+
+Executing: dotnet publish "C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\../Demo.DeployWithAspirate.Web/Demo.DeployWithAspirate.Web.csproj" -t:PublishContainer
+--verbosity "quiet" --nologo -r "linux-x64" -p:ContainerRepository="aspiratedemo/webfrontend" -p:ContainerImageTag="latest"
+(✔) Done:  Building and Pushing container for project webfrontend
+Building and push completed for all selected project components.
+
+── Handling Dockerfiles ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+No Dockerfile components selected. Skipping build and publish action.
+
+── Populating Secrets File ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+(✔) Done:  Secret State has been saved.
+
+── Handle Image Pull Policy ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+── Handling Namespace ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Would you like to deploy all manifests to a custom namespace? [y/n] (n): y
+Enter the namespace you would like to deploy all manifests to:  aspiratedemo
+ Generated manifests will be deployed to the aspiratedemo namespace.
+
+── Handle Kustomize Manifests ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Generating kustomize manifests to run against your kubernetes cluster:
+(✔) Done:  Generating C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output\cache
+(✔) Done:  Generating C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output\apiservice
+(✔) Done:  Generating C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output\webfrontend
+
+── Handling Final Manifest ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Would you like to generate the top level kustomize manifest to run against your kubernetes cluster? [y/n] (y): y
+Generating namespace manifest with name 'aspiratedemo'
+(✔) Done:  Generating aspirate-output/namespace.yaml
+Generating Aspire Dashboard manifest
+(✔) Done:  Generating aspirate-output/dashboard.yaml
+Generating final manifest with name 'kustomization.yaml'
+(✔) Done:  Generating aspirate-output/kustomization.yaml
+
+ 🚀 Execution Completed 🚀
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>aspirate generate
+
+     _                    _           ___
+    / \     ___   _ __   (_)  _ __   ( _ )
+   / _ \   / __| | '_ \  | | | '__|  / _ \
+  / ___ \  \__ \ | |_) | | | | |    | (_) |
+ /_/   \_\ |___/ | .__/  |_| |_|     \___/
+                 |_|
+Handle deployments of a .NET Aspire AppHost
+
+
+── Handling Aspirate State ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Loading state from C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-state.json.
+Would you like to use all previous state values, and skip re-prompting where possible ? [y/n] (y): y
+(✔) Done:  State loaded successfully from C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-state.json. Will run without re-prompting for
+values.
+
+── Handling Aspirate Secrets ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Secrets are disabled.
+
+── Handling Aspire Manifest ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Generating Aspire Manifest for supplied App Host
+(✔) Done:  Created Aspire Manifest At Path: C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\manifest.json
+
+── Selecting Required Components ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Resource 'cache-password-uri-encoded' is unsupported type 'annotated.string'. Skipping as UnsupportedResource.
+Processing all components in the loaded file, as per the state file.
+
+── Handling Inputs ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Successfully generated a value for cache-password's Input Value 'value'
+(✔) Done:  Input values have all been assigned.
+
+── Handle Value and Parameter Substitution ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+── Handling DAPR Components ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+No Dapr components selected, skipping Dapr annotations.
+
+── Gathering Information about deployables ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Gathering container details for each project in selected components
+(✔) Done:  Populated container details cache for project apiservice
+(✔) Done:  Populated container details cache for project webfrontend
+Gathering Tasks Completed - Cache Populated.
+
+── Handling Projects ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Building all project resources, and pushing containers
+
+Executing: dotnet publish "C:\Personal\SW Development\.NET Aspire Book
+Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\../Demo.DeployWithAspirate.ApiService/Demo.DeployWithAspirate.ApiService.csproj" -t:PublishContainer --verbosity "quiet" --nologo -r "linux-x64"
+-p:ContainerRepository="aspiratedemo/apiservice" -p:ContainerImageTag="latest"
+(✔) Done:  Building and Pushing container for project apiservice
+
+Executing: dotnet publish "C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\../Demo.DeployWithAspirate.Web/Demo.DeployWithAspirate.Web.csproj"
+-t:PublishContainer --verbosity "quiet" --nologo -r "linux-x64" -p:ContainerRepository="aspiratedemo/webfrontend" -p:ContainerImageTag="latest"
+(✔) Done:  Building and Pushing container for project webfrontend
+Building and push completed for all selected project components.
+
+── Handling Dockerfiles ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+No Dockerfile components selected. Skipping build and publish action.
+
+── Populating Secrets File ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Secrets have been disabled for this run.
+
+── Handling Namespace ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Would you like to deploy all manifests to a custom namespace? [y/n] (n): y
+Enter the namespace you would like to deploy all manifests to:  aspiratedemo
+ Generated manifests will be deployed to the aspiratedemo namespace.
+
+── Handle Kustomize Manifests ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Generating kustomize manifests to run against your kubernetes cluster:
+(✔) Done:  Generating C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output\cache
+(✔) Done:  Generating C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output\apiservice
+(✔) Done:  Generating C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output\webfrontend
+
+── Handling Final Manifest ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Would you like to generate the top level kustomize manifest to run against your kubernetes cluster? [y/n] (y): y
+Generating namespace manifest with name 'aspiratedemo'
+(✔) Done:  Generating aspirate-output/namespace.yaml
+Generating Aspire Dashboard manifest
+(✔) Done:  Generating aspirate-output/dashboard.yaml
+Generating final manifest with name 'kustomization.yaml'
+(✔) Done:  Generating aspirate-output/kustomization.yaml
+
+ 🚀 Execution Completed 🚀
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>kind load docker-image aspiratedemo/apiservice:latest --name kind-kind
+ERROR: no nodes found for cluster "kind-kind"
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>kind load docker-image aspiratedemo/apiservice:latest
+Image: "aspiratedemo/apiservice:latest" with ID "sha256:9ba22281dee136e290489544588afeaed5a2fcaff89e2d5c2c1974a4c9ce1380" not yet present on node "kind-control-plane", loading...
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>kind load docker-image aspiratedemo/webfrontend:latest
+Image: "aspiratedemo/webfrontend:latest" with ID "sha256:fcbef37ba240785708e8f920f7698c8d3e43e905dc24b8054b48c90b6d285121" not yet present on node "kind-control-plane", loading...
+
+
+##I am using directly kubectl to apply the generated manifests to work around an issue with aspirate apply command -> WHEN THE PATH CONTAINS SPACES THE COMMAND FAILS##
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>kubectl apply --server-side -k "C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost\aspirate-output"
+namespace/aspiratedemo serverside-applied
+configmap/apiservice-env serverside-applied
+configmap/cache-env serverside-applied
+configmap/webfrontend-env serverside-applied
+service/apiservice serverside-applied
+service/aspire-dashboard serverside-applied
+service/cache serverside-applied
+service/webfrontend serverside-applied
+deployment.apps/apiservice serverside-applied
+deployment.apps/aspire-dashboard serverside-applied
+deployment.apps/cache serverside-applied
+deployment.apps/webfrontend serverside-applied
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>kubectl get all --namespace aspiratedemo
+NAME                                    READY   STATUS    RESTARTS   AGE
+pod/apiservice-799497dbd-sg27d          1/1     Running   0          84s
+pod/aspire-dashboard-5ccfd75cfc-nsgxj   1/1     Running   0          84s
+pod/cache-57446f9fb-8tzcs               1/1     Running   0          84s
+pod/webfrontend-6796b544b4-cx9h4        1/1     Running   0          84s
+
+NAME                       TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)               AGE
+service/apiservice         ClusterIP   10.96.231.202   <none>        8080/TCP,8443/TCP     84s
+service/aspire-dashboard   ClusterIP   10.96.146.24    <none>        18888/TCP,18889/TCP   84s
+service/cache              ClusterIP   10.96.142.19    <none>        6379/TCP              84s
+service/webfrontend        ClusterIP   10.96.155.65    <none>        8080/TCP,8443/TCP     84s
+
+NAME                               READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/apiservice         1/1     1            1           84s
+deployment.apps/aspire-dashboard   1/1     1            1           84s
+deployment.apps/cache              1/1     1            0           84s
+deployment.apps/webfrontend        1/1     1            1           84s
+
+NAME                                          DESIRED   CURRENT   READY   AGE
+replicaset.apps/apiservice-799497dbd          1         1         1       84s
+replicaset.apps/aspire-dashboard-5ccfd75cfc   1         1         1       84s
+replicaset.apps/cache-57446f9fb               1         1         1       84s
+replicaset.apps/webfrontend-6796b544b4        1         1         1       84s
+
+C:\Personal\SW Development\.NET Aspire Book Exercises\Demo.DeployWithAspirate\Demo.DeployWithAspirate.AppHost>   
+
+
+kubectl port-forward service/aspire-dashboard --namespace aspiratedemo 18888
+Forwarding from 127.0.0.1:18888 -> 18888
+
+
+ kubectl port-forward service/webfrontend --namespace aspiratedemo 8081:8080
+
+ Forwarding from 127.0.0.1:8081 -> 8080
+Forwarding from [::1]:8081 -> 8080
+
