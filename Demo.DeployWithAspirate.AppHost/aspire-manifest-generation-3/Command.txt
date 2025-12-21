@@ -1,0 +1,3 @@
+﻿# Aspire manifest generation via launch profile
+
+dotnet run --launch-profile generate-manifest
