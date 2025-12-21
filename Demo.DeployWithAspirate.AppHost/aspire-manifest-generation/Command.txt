@@ -1,3 +1,3 @@
-﻿# Execute the following command to generate the Aspire manifest from the AppHost project root
+﻿# Execute the following aspire command to generate the Aspire manifest from the AppHost project root
 
 aspire do publish-manifest --output-path ./aspire-manifest-generation
